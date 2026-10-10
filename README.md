@@ -1,22 +1,72 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ⚡ SAM AI - Intelligent Mobile IDE & Assistant
 
-# Run and deploy your AI Studio app
+An intelligent, next-generation mobile development environment and AI coding assistant designed to empower developers to create, edit, debug, and run projects seamlessly on the go.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/684a650c-f50a-4cc0-b049-59202748bcc6
+## 🌟 Key Features
 
-## Run Locally
+- 🧠 **AI-Powered Code Generation & Assistance**: Intelligent coding partner capable of generating boilerplate, debugging errors, and suggesting optimizations in real time.
+- 💻 **Mobile IDE Experience**: Built-in editor with syntax highlighting, project file tree navigation, and live preview capabilities.
+- 🎙️ **Voice-Driven Assistant**: Interactive voice commands and conversational agent mode for hands-free coding assistance.
+- 📁 **Project Management**: Create, manage, and organize multiple codebases effortlessly.
+- 🎨 **Modern & Sleek UI**: Fully reactive Jetpack Compose interface with dark theme aesthetics and smooth animations.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+---
 
+## 🚀 Getting Started
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+### Prerequisites
+- [Android Studio Ladybug / Koala or newer](https://developer.android.com/studio)
+- Android SDK (API 34+)
+- JDK 17+
+
+### Installation & Local Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/theshlok18/ide-sam-Ai.git
+   cd ide-sam-Ai
+   ```
+
+2. **Open in Android Studio:**
+   - Launch Android Studio.
+   - Select **Open** and choose the `ide-sam-Ai` directory.
+   - Allow Gradle to sync dependencies.
+
+3. **Configure Environment Variables:**
+   - Copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Add your API credentials in `.env`:
+     ```env
+     GEMINI_API_KEY=your_api_key_here
+     ```
+
+4. **Build & Run:**
+   - Connect an Android device with USB debugging enabled or launch an Android Emulator.
+   - Click **Run** (`Shift + F10`) in Android Studio.
+
+---
+
+## 🛠️ Architecture & Tech Stack
+
+- **UI Framework:** Kotlin & Jetpack Compose
+- **Architecture:** MVVM + Clean Architecture Patterns
+- **Database / Local Storage:** Room DB
+- **Networking & AI Integration:** Google AI Gemini SDK / REST API Client
+- **Theme:** Custom Material 3 Dark/Light Palette
+
+---
+
+## 👨‍💻 Author & Credits
+
+- **Creator & Developer:** [Shlok Sathe](https://github.com/theshlok18) (@theshlok18)
+- **Repository:** [ide-sam-Ai](https://github.com/theshlok18/ide-sam-Ai)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
